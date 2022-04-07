@@ -76,7 +76,7 @@ def banner():
 	wel = '# WELCOME TO SHINXZY TOOLS'
 	wel2 = mark(wel, style='green')
 	sol().print(wel2)
-	print(f""" {M}
+	print(f""" {O}
    _______  _____   _____   _______  ______  ______  -
     |      |     |  |    |     |     |     | |     | |
     |_____ |_____|  |    |  °° |     |_____| |_____| |____
