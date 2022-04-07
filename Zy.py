@@ -74,9 +74,9 @@ def back():
 def banner():
 	clear()
 	wel = '# WELCOME TO SHINXZY TOOLS'
-	wel2 = mark(wel, style='green')
+	wel2 = mark(wel, style='cyan')
 	sol().print(wel2)
-	print(f""" {O}
+	print(f""" {H}
    _______  _____   _____   _______  ______  ______  -
     |      |     |  |    |     |     |     | |     | |
     |_____ |_____|  |    |  °° |     |_____| |_____| |____
