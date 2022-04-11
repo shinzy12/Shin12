@@ -557,7 +557,7 @@ def crack(idf,pwv):
 					ceker(idf,pw)
 				else:
 					print('\n')
-					statuscp = f'[•] ID       : {idf} [•] PASSWORD : {pw}'
+					statuscp = f'[•]  {idf} |  {pw}'
 					statuscp1 = nel(statuscp, style='red')
 					cetak(nel(statuscp1, title='SESI'))
 					open('CP/'+cpc,'a').write(idf+'|'+pw+'\n')
