@@ -557,9 +557,9 @@ def crack(idf,pwv):
 					ceker(idf,pw)
 				else:
 					print('\n')
-					statuscp = f'[•]  {idf} | {pw}'
+					statuscp = f'[•] {idf} | {pw}'
 					statuscp1 = nel(statuscp, style='yellow')
-                                        cetak(nel(statuscp1, title='CEKPOINT'))
+					cetak(nel(statuscp1, title='SESI'))
 					open('CP/'+cpc,'a').write(idf+'|'+pw+'\n')
 					akun.append(idf+'|'+pw)
 					cp+=1
