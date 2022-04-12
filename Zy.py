@@ -836,7 +836,7 @@ def ceker(idf,pw):
 		cp+=1
 		opsi = kent.find_all('option')
 		if len(opsi)==0:
-			print('\r%s---> Tap Yes / A2F (Cek Login Di Lite/Mbasic%s)'%(hh,x))
+			print('\r%s---> 🎉🎉🎉🎉🎉horee🎉🎉🎉🎉🎉 Tap Yes (Cek Login Di Lite/Mbasic%s)'%(hh,x))
 		else:
 			for opsii in opsi:
 				print('\r%s---> %s%s'%(kk,opsii.text,x))
