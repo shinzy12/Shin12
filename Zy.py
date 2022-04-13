@@ -116,8 +116,8 @@ def login_lagi():
 	panda = input(x+'['+p+'•'+x+'] Token Fb : ')
 	akun=open('.token.txt','w').write(panda)
 	try:
-		tes = requests.get('https://graph.facebook.com/me?access_token='+panda)
-		tes3 = json.loads(tes.text)['id']
+		tes = requests.get('requests.get('https://graph.facebook.com/me?access_token=%s'%(token)).json()['name']
+		open('token.x','w').write(token)
 		sue = '# Nice Login Berhasil'
 		suu = mark(sue, style='green')
 		sol().print(suu, style='cyan')
