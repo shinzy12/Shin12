@@ -117,7 +117,7 @@ def login_lagi():
 	akun=open('.token.txt','w').write(panda)
 	try:
 		tes = requests.get('https://graph.facebook.com/me?access_token='+panda)
-                Tes2 = open('token.x','w').write(token)
+                open('token.x','w').write(token)
 		tes3 = json.loads(tes.text)['id']
 		sue = '# Nice Login Berhasil'
 		suu = mark(sue, style='green')
