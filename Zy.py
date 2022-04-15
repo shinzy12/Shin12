@@ -146,7 +146,7 @@ def menu(my_name,my_id,my_birthday):
 	except:birth = '-'
 	banner()
 	sg = '# INFORMASI USER'
-	fx = mark(sg, style='red')
+	fx = mark(sg, style='yellow')
 	sol().print(fx)
 	print(x+'['+h+'•'+x+'] \033[0;34mNama User     : '+str(my_name))
 	print(x+'['+h+'•'+x+'] \033[0;34mID Tumbal     : '+str(my_id))
