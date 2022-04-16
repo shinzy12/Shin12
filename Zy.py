@@ -92,7 +92,7 @@ def login():
 			token = open('.token.txt','r').read()
 			tokenku.append(token)
 			try:
-				sy = requests.get('https://graph.facebook.com/v13.0/oauth/access_token?='+tokenku[0])
+				sy = requests.get('https://graph.facebook.com/me?access_token='+tokenku[0])
 				sy2 = json.loads(sy.text)['name']
 				sy3 = json.loads(sy.text)['id']
 				sy4 = json.loads(sy.text)['birthday']
@@ -116,7 +116,7 @@ def login_lagi():
 	panda = input(x+'['+p+'•'+x+'] Token Fb : ')
 	akun=open('.token.txt','w').write(panda)
 	try:
-		tes = requests.get('https://graph.facebook.com/v13.0/oauth/access_token?='+panda)
+		tes = requests.get('https://graph.facebook.com/me?access_token='+panda)
 		tes3 = json.loads(tes.text)['id']
 		sue = '# Nice Login Berhasil'
 		suu = mark(sue, style='green')
