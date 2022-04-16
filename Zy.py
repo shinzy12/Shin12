@@ -93,10 +93,10 @@ def login():
 			tokenku.append(token)
 			try:
 				sy = requests.get('https://graph.facebook.com/me?access_token='+tokenku[0])
-    		        	sy2 = json.loads(sy.text)['name']
+				sy2 = json.loads(sy.text)['name']
 				sy3 = json.loads(sy.text)['id']
 				sy4 = json.loads(sy.text)['birthday']
-				menu(,sy2,sy3,sy4)
+				menu(sy2,sy3,sy4)
 			except KeyError:
 				login_lagi()
 			except requests.exceptions.ConnectionError:
