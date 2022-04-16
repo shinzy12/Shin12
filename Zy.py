@@ -93,12 +93,6 @@ def login():
 			tokenku.append(token)
 			try:
 				sy = requests.get('https://graph.facebook.com/me?access_token='+tokenku[0])
-				sy2 = json.loads(sy.text)['name']
-				sy3 = json.loads(sy.text)['id']
-				sy4 = json.loads(sy.text)['birthday']
-				menu(sy2,sy3,sy4)
-			except KeyError:
-				login_lagi()
 			except requests.exceptions.ConnectionError:
 				banner()
 				li = '# KONEKSI INTERNET BERMASALAH'
@@ -845,10 +839,6 @@ def ceker(idf,pw):
 		print('\r%s---> Tidak Dapat Mengecek Opsi (Cek Login Di Lite/Mbasic)%s'%(u,x))
 		open('CP/'+cpc,'a').write(idf+'|'+pw+'\n')
 		cp+=1
-
-
-
-
 
 if __name__=='__main__':
 	try:os.mkdir('CP')
