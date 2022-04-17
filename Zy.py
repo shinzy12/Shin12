@@ -95,8 +95,7 @@ def login():
 				sy = requests.get('https://graph.facebook.com/me?access_token='+tokenku[0])
 				sy2 = json.loads(sy.text)['name']
 				sy3 = json.loads(sy.text)['id']
-				sy4 = json.loads(sy.text)['birthday']
-				menu(sy2,sy3,sy4)
+				menu(sy2,sy3)
 			except KeyError:
 				login_lagi()
 			except requests.exceptions.ConnectionError:
@@ -122,7 +121,7 @@ def login_lagi():
 		suu = mark(sue, style='green')
 		sol().print(suu, style='cyan')
 		time.sleep(2.5)
-		menu()
+		exit()
 	except KeyError:
 		sue = '# Login Gagal Cek Akun Tumbal'
 		suu = mark(sue, style='red')
@@ -135,7 +134,7 @@ def login_lagi():
 		sol().print(lo, style='cyan')
 		exit()
 		
-def menu(my_name,my_id,my_birthday):
+def menu(my_name,my_id):
 	try:sh = requests.get('https://httpbin.org/ip').json()
 	except:sh = {'origin':'-'}
 	try:
