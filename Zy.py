@@ -448,7 +448,7 @@ def dump_massal():
 def setting():
 	wl = '# SETTING URUTAN ID'
 	sol().print(mark(wl, style='green'))
-	teks = '[01] Crack Dari Akun Tertua \n[02] Crack Dari Akun Termuda \n[03] Acak Urutan ID'
+	teks = '[01] Crack Dari Akun old \n[02] Crack Dari Akun new \n[03] Acak Urutan ID'
 	tak = nel(teks, style='cyan')
 	cetak(nel(tak, title='SETTING'))
 	hu = input(x+'['+p+'f'+x+'] Pilih : ')
