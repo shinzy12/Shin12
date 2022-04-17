@@ -106,7 +106,7 @@ def login():
 				sol().print(lo, style='cyan')
 				exit()
 		except IOError:
-			login_lagi()
+			menu()
 
 def login_lagi():
 	banner()
