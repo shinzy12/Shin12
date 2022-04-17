@@ -104,8 +104,6 @@ def login():
 				lo = mark(li, style='red')
 				sol().print(lo, style='cyan')
 				exit()
-		except IOError:
-			menu()
 
 def login_lagi():
 	banner()
