@@ -104,7 +104,7 @@ def login():
 				lo = mark(li, style='red')
 				sol().print(lo, style='cyan')
 				exit()
-                        except IOError:
+		except IOError:
 			login_lagi()
 
 
