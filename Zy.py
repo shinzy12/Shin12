@@ -82,8 +82,8 @@ def banner():
    _______| | |  | | |   |  °    |     |_____| |_____| |____  |
    ______________________ MULTI BRUTE ________________________|
        ____         ____       [®]PEMBUAT = M ZAINUL UMAM
-      |___           ___|      [®]UPDATE  = Versi PakdeQirom
-  ________| S H I N |_________ [®]PREMIUM = AKTIF SAMPE KIAMAT""")
+      |___           ___|      [®]UPDATE  = V1.7
+  ________| S H I N |_________ [®]PREMIUM = AKTIF SAMPAI KAPAN YA.?""")
                                     
 	
 
