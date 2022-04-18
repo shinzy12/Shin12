@@ -372,12 +372,12 @@ def dump_publik():
 		print(x+'['+h+'•'+x+'] Total : '+str(len(id)))
 		setting()
 	except requests.exceptions.ConnectionError:
-		li = '# KONEKSI INTERNET BERMASALAH, PERIKSA & COBA LAGI'
+		li = '# KONEKSI BERMASALAH, GK DUE PAKETAN KOK NGECRACK'
 		lo = mark(li, style='red')
 		sol().print(lo, style='cyan')
 		exit()
 	except (KeyError,IOError):
-		teks = '# PERTEMANAN TIDAK PUBLIK ATAU TOKEN RUSAK'
+		teks = '# GK PUPBLIK LO MAZEHH, NYESEK LEK DIBAYANGNO'
 		teks2 = mark(teks, style='red')
 		sol().print(teks2)
 		exit()
@@ -433,7 +433,7 @@ def dump_massal():
 		except (KeyError,IOError):
 			pass
 		except requests.exceptions.ConnectionError:
-			li = '# KONEKSI INTERNET BERMASALAH, PERIKSA & COBA LAGI'
+			li = '# KONEKSI BERMASALAH, GK DUE PAKETAN KOK NGECRACK'
 			lo = mark(li, style='red')
 			sol().print(lo, style='cyan')
 			exit()
@@ -836,7 +836,7 @@ def ceker(idf,pw):
 		cp+=1
 		opsi = kent.find_all('option')
 		if len(opsi)==0:
-			print('\r%s---> 🎉🎉🎉🎉🎉horee🎉🎉🎉🎉🎉 Tap Yes (Cek Login Di Lite/Mbasic%s)'%(hh,x))
+			print('\r%s---> hore Tap Yes (Cek Login Di Lite/Mbasic%s)'%(hh,x))
 		else:
 			for opsii in opsi:
 				print('\r%s---> %s%s'%(kk,opsii.text,x))
