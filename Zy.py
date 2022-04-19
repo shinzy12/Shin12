@@ -83,7 +83,7 @@ def banner():
    ______________________ MULTI BRUTE ________________________|
        ____         ____       [®]PEMBUAT = M ZAINUL UMAM
       |___           ___|      [®]UPDATE  = V1.7
-  ________| S H I N |_________ [®]PREMIUM = AKTIF SAMPAI KAPAN YA.?""")
+  ________| S H I N |_________ [®]PREMIUM = AKTIF SAYANG""")
                                     
 	
 
@@ -124,7 +124,7 @@ def login_lagi():
 		time.sleep(2.5)
 		exit()
 	except KeyError:
-		sue = '# Login Gagal Cek Akun Tumbal'
+		sue = '# TOKEN RUSAK, SEDIH LEK DIBAYANGNO'
 		suu = mark(sue, style='red')
 		sol().print(suu, style='cyan')
 		time.sleep(2.5)
@@ -437,7 +437,7 @@ def dump_massal():
 			lo = mark(li, style='red')
 			sol().print(lo, style='cyan')
 			exit()
-	tot = '# TOTAL 👉 %s ID, JNGN LUPA BERDOA'%(len(id))
+	tot = '# TOTAL 👉 %s ID, 🎉DUMP BERHASIL🎉 '%(len(id))
 	if len(id)==0:
 		tot2 = mark(tot, style='red')
 	else:
