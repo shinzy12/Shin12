@@ -1,4 +1,4 @@
-#AKU LELAH KAWAN
+#open source
 
 import requests,bs4,json,os,sys,random,datetime,time,re
 try:
@@ -83,7 +83,7 @@ def banner():
    ______________________ MULTI BRUTE ________________________|
        ____         ____       [®]PEMBUAT = M ZAINUL UMAM
       |___           ___|      [®]UPDATE  = V1.7
-  ________| S H I N |_________ [®]PREMIUM = AKTIF SAYANG""")
+  ________| S H I N |_________ [®]PREMIUM = YO NDAK TAU""")
                                     
 	
 
