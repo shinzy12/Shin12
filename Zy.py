@@ -26,6 +26,7 @@ except:ugen2 = ['Mozilla/5.0 (Linux; U; Android 2.3.4; pt-pt; SonyEricssonLT18a 
 
 id,id2,loop,ok,cp,akun,oprek,method,lisensiku,taplikasi,tokenku,uid,lisensikuni= [],[],0,0,0,[],[],[],[],[],[],[],[]
 
+XZ= '33[31;1m'
 x = '\33[m' # DEFAULT
 k = '\033[93m' # KUNING +
 h = '\x1b[1;92m' # HIJAU +
@@ -76,7 +77,7 @@ def banner():
 	wel = '# WELCOME TO SHINXZY TOOLS'
 	wel2 = mark(wel, style='green yellow')
 	sol().print(wel2)
-	print(f""" {b}
+	print(f""" {XZ}
     _____ __  _______   _________  __ 
    / ___// / / /  _/ | / /__  /\ \/ / 
    \__ \/ /_/ // //  |/ /  / /  \  /[®]PEMBUAT =M.ZAINUL.U
