@@ -151,10 +151,10 @@ def menu(my_name,my_id):
 	sg = '# INFORMASI USER'
 	fx = mark(sg, style='yellow')
 	sol().print(fx)
-	print(x+'['+h+'•'+x+'] \033[0;34mNama User     : '+str(my_name))
-	print(x+'['+h+'•'+x+'] \033[0;34mID Tumbal     : '+str(my_id))
+	print(x+'['+h+'•'+x+'] \033[1;34mNama User     : '+str(my_name))
+	print(x+'['+h+'•'+x+'] \033[1;35mID Tumbal     : '+str(my_id))
 	print(x+'['+h+'•'+x+'] \033[93mTanggal Lahir : '+str(birth))
-	print(x+'['+h+'•'+x+'] \033[923mAlamat Ip     : '+str(sh['origin']))
+	print(x+'['+h+'•'+x+'] \033[93mAlamat Ip     : '+str(sh['origin']))
 	io = '\x1b[1;92m[01] Crack Dari Pertemanan Publik\n\x1b[1;92m[02] Crack ID Dari Akun Publik (masal) \n\x1b[1;92m[03] Cek Hasil Crack\n\x1b[1;92m[04] Cek Opsi Checkpoint\n\033[31m[00] Keluar'
 	oi = nel(io, style='cyan')
 	cetak(nel(oi, title='PILIHAN MENU'))
