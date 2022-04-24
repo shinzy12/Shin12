@@ -73,20 +73,20 @@ def back():
 	login()
 def banner():
 	clear()
-	wel = '# WELCOME TO SHINXZY TOOLS'
+	wel = '# WELCOME TO SHINZY TOOLS'
 	wel2 = mark(wel, style='green yellow')
 	sol().print(wel2)
 	print(f""" {b}
     _____ __  _______   _________  __ 
    / ___// / / /  _/ | / /__  /\ \/ / 
-   \__ \/ /_/ // //  |/ /  / /  \  /[®]PEMBUAT =M.ZAINUL.U
+   \__ \/ /_/ // //  |/ /  / /  \  /[®]PEMBUAT =M.ZAINUL UMAM
   ___/ / __  // // /|  /  / /__ / / [®]UPDATE  = V1.8
- /____/_/ /_/___/_/ |_/  /____//_/  [®]TOOLS AKTIF(sampai pakdeQirom rabi)
+ /____/_/ /_/___/_/ |_/  /____//_/  [®]AKTIF(sampai pakdeQirom rabi)
                       ____  _    __              __
      ____ ___  __  __/ / /_(_)  / /_____  ____  / /____
     / __ `__ \/ / / / / __/ /  / __/ __ \/ __ \/ / ___/
    / / / / / / /_/ / / /_/ /  / /_/ /_/ / /_/ / (__  )
-  /_/ /_/ /_/\__,_/_/\__/_/   \__/\____/\____/_/____/ """)
+  /_/ /_/ /_/\__,_/_/\__/_/   \__/\____/\____/_/____/ MADE IN SERAH""")
                                     
 	
 
@@ -153,7 +153,7 @@ def menu(my_name,my_id):
 	sol().print(fx)
 	print(x+'['+h+'•'+x+'] \033[1;34mNama User     : '+str(my_name))
 	print(x+'['+h+'•'+x+'] \033[1;35mID Tumbal     : '+str(my_id))
-	print(x+'['+h+'•'+x+'] \033[93mTanggal Lahir : '+str(birth))
+	print(x+'['+h+'•'+x+'] \033[93mTanggal Lahir : '+str(device))
 	print(x+'['+h+'•'+x+'] \033[93mAlamat Ip     : '+str(sh['origin']))
 	io = '\x1b[1;92m[01] Crack ID Pertemanan/Publik\n\x1b[1;92m[02] Crack ID Publik (Masal) \n\x1b[1;92m[03] Cek Hasil Crack\n\x1b[1;92m[04] Cek Opsi Checkpoint\n\033[31m[00] METU BANGSAT'
 	oi = nel(io, style='cyan')
