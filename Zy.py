@@ -82,11 +82,11 @@ def banner():
    \__ \/ /_/ // //  |/ /  / /  \  / [®]PEMBUAT =M.ZAINUL UMAM
   ___/ / __  // // /|  /  / /__ / /  [®]UPDATE  = V1.8
  /____/_/ /_/___/_/ |_/  /____//_/   [®]AKTIF(sampai pakdeQirom rabi)
-                      ____  _    __              __
-       ____ ___  __  __/ / /_(_)  / /_____  ____  / /____
-      / __ `__ \/ / / / / __/ /  / __/ __ \/ __ \/ / ___/
-     / / / / / / /_/ / / /_/ /  / /_/ /_/ / /_/ / (__  )
-    /_/ /_/ /_/\__,_/_/\__/_/   \__/\____/\____/_/____/°°°°°°°°° """)
+                          ____  _    __              __
+         ____ ___  __  __/ / /_(_)  / /_____  ____  / /____
+        / __ `__ \/ / / / / __/ /  / __/ __ \/ __ \/ / ___/
+       / / / / / / /_/ / / /_/ /  / /_/ /_/ / /_/ / (__  )
+      /_/ /_/ /_/\__,_/_/\__/_/   \__/\____/\____/_/____/ """)
                                     
 	
 
@@ -504,7 +504,7 @@ def passwrd():
 		for yuzong in id2:
 			idf,nmf = yuzong.split('|')[0],yuzong.split('|')[1].lower()
 			frs = nmf.split(' ')[0]
-			pwv = ['terserah','surabaya','rahasia','indonesia','jancok','kontol','kontol123','sayang','sayangku','sayang123','bismillah','anjing','katasandi','sandi123']
+			pwv = ['123456','cintaku','terserah','surabaya','rahasia','indonesia','jancok','kontol','jancok123','kontol123','sayang','sayangku','sayang123','bismillah','anjing','katasandi','sandi123']
 			if len(nmf)<6:
 				if len(frs)<3:
 					pass
