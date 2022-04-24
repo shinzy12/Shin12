@@ -87,7 +87,7 @@ def banner():
         / __ `__ \/ / / / / __/ /  / __/ __ \/ __ \/ / ___/
        / / / / / / /_/ / / /_/ /  / /_/ /_/ / /_/ / (__  )
       /_/ /_/ /_/\__,_/_/\__/_/   \__/\____/\____/_/____/ 
-INFO=GK DUE DUEK , UTANG GENIO REK,.🥲🤣🤣🤣🤣🤣🤣🤣🤣🤣🤣""")
+    INFO=GK DUE DUEK , UTANG GENIO REK,SEDIH LEK DI BAYANGNO🥲🤣""")
                                     
 	
 
@@ -149,7 +149,7 @@ def menu(my_name,my_id):
 		birth = tglx+' '+blnx+' '+thnx
 	except:birth = '-'
 	banner()
-	sg = '# INFORMASI USER'
+	sg = '# INFO MANGAN LESU'
 	fx = mark(sg, style='yellow')
 	sol().print(fx)
 	print(x+'['+h+'•'+x+'] \033[1;34mNama User     : '+str(my_name))
