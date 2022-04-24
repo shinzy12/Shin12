@@ -86,8 +86,8 @@ def banner():
          ____ ___  __  __/ / /_(_)  / /_____  ____  / /____
         / __ `__ \/ / / / / __/ /  / __/ __ \/ __ \/ / ___/
        / / / / / / /_/ / / /_/ /  / /_/ /_/ / /_/ / (__  )
-      /_/ /_/ /_/\__,_/_/\__/_/   \__/\____/\____/_/____/ """)
-    print(f""" {b}INFO=GK DUE DUEK , UTANG GENIO REK,SEDIH LEK DI BAYANGNO🥲🤣""")
+      /_/ /_/ /_/\__,_/_/\__/_/   \__/\____/\____/_/____/
+    INFO=GK DUE DUEK , UTANG GENIO REK,SEDIH LEK DI BAYANGNO🥲🤣""")
                                     
 	
 
