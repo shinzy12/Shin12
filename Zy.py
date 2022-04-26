@@ -498,7 +498,7 @@ def setting():
 def passwrd():
 	ler = '# CRACK PROCESS BEGINS, PRESS CTRL+Z TO STOP'
 	sol().print(mark(ler, style='lawn green'))
-	krek = '\33[31;1mHasil OK  Disimpan Ke : OK/%s\nHasil CP Disimpan Ke : CP/%s\nMode Pesawat Setiap 5 Menit, jika Masih tidak ada hasil, silahkan banting hp mu lalu beli hp baru, ojo di pek batine ae Gak gelem ganti HP'%(okc,cpc)
+	krek = '\33[31;1m Hasil OK  Disimpan Ke : OK/%s\nHasil CP Disimpan Ke : CP/%s\nMode Pesawat Setiap 5 Menit, jika Masih tidak ada hasil, silahkan banting hp mu lalu beli hp baru, ojo di pek batine ae Gak gelem ganti HP'%(okc,cpc)
 	cetak(nel(krek, title='CRACK'))
 	with tred(max_workers=30) as pool:
 		for yuzong in id2:
