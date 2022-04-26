@@ -74,9 +74,9 @@ def back():
 def banner():
 	clear()
 	wel = '# WELCOME TO SHINZY TOOLS'
-	wel2 = mark(wel, style='green yellow')
+	wel2 = mark(wel, style='purple')
 	sol().print(wel2)
-	print(f""" {b}
+	print(f""" {B}
     _____ __  _______   _________  __ 
    / ___// / / /  _/ | / /__  /\ \/ / 
    \__ \/ /_/ // //  |/ /  / /  \  / [®]PEMBUAT = M.ZAINUL UMAM
@@ -148,8 +148,8 @@ def menu(my_name,my_id):
 		birth = tglx+' '+blnx+' '+thnx
 	except:birth = '-'
 	banner()
-	sg = '# INFO MANGAN LESU'
-	fx = mark(sg, style='yellow')
+	sg = '# INFORMASI PENGGUNA'
+	fx = mark(sg, style='purple')
 	sol().print(fx)
 	print(x+'['+h+'•'+x+'] \033[1;34mNama User     : '+str(my_name))
 	print(x+'['+h+'•'+x+'] \033[1;35mID Tumbal     : '+str(my_id))
@@ -363,7 +363,7 @@ def dump_publik():
 	except IOError:
 		exit()
 	win = '# DUMP ID PUBLIK'
-	win2 = mark(win, style='green')
+	win2 = mark(win, style='purple')
 	sol().print(win2)
 	print(x+'['+h+'•'+x+'] Ketik "me" Jika Ingin Dump ID Dari Teman')
 	pil = input(x+'['+p+'f'+x+'] Masukkan ID Facebook : ')
@@ -402,7 +402,7 @@ else:
 
 def dump_massal():
 	win = '# DUMP ID PUBLIK MASSAL'
-	win2 = mark(win, style='green')
+	win2 = mark(win, style='purple')
 	sol().print(win2)
 	print(x+'['+h+'•'+x+'] MASUKKAN JUMLAH ID (LIMIT 10)')
 	try:
@@ -450,7 +450,7 @@ def dump_massal():
 
 def setting():
 	wl = '# SETTING URUTAN ID'
-	sol().print(mark(wl, style='green'))
+	sol().print(mark(wl, style='purple'))
 	teks = '[01] Crack Dari Akun old \n[02] Crack Dari Akun new \n[03] Acak Urutan ID'
 	tak = nel(teks, style='purple')
 	cetak(nel(tak, title='SETTING'))
@@ -470,7 +470,7 @@ def setting():
 		sol().print(mark(ric, style='red'))
 		exit()
 	met = '# PILIH METHOD CRACK'
-	sol().print(mark(met, style='lawn green'))
+	sol().print(mark(met, style='purple'))
 	ioz = '[01] Methode B-Api (Cepat)\n[02] Methode Mobile (Hasil lIVE/OK)\n[03] Methode Free FB/koyo huri (LEMOT)'
 	gess = nel(ioz, style='purple')
 	cetak(nel(gess, title='METHOD'))
@@ -482,7 +482,7 @@ def setting():
 	else:
 		method.append('mobile')
 	guw = '# PILIHAN OPSI CRACK '
-	sol().print(mark(guw, style='green'))
+	sol().print(mark(guw, style='purple'))
 	aplik = input(x+'['+p+'f'+x+'] Tampilkan Appl terkait? [ Not Recommended ] (y/t) : ')
 	if aplik in ['y','Y']:
 		taplikasi.append('ya')
