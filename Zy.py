@@ -155,7 +155,7 @@ def menu(my_name,my_id):
 	print(x+'['+h+'•'+x+'] \033[1;35mID Tumbal     : '+str(my_id))
 	print(x+'['+h+'•'+x+'] \033[1;93mTanggal Lahir : '+str(birth))
 	print(x+'['+h+'•'+x+'] \033[1;93mAlamat Ip     : '+str(sh['origin']))
-	io = '\x1b[1;92m[01] Crack ID Pertemanan/Publik\n\x1b[1;92m[02] Crack ID Publik (Masal) \n\x1b[1;92m[03] Cek Hasil Crack\n\x1b[1;92m[04] Cek Opsi Checkpoint\n\033[31m[00] METU BANGSAT'
+	io = '\x1b[01] Crack ID Pertemanan/Publik\n\x1b[02] Crack ID Publik (Masal) \n\x1b[03] Cek Hasil Crack\n\x1b[04] Cek Opsi Checkpoint\n\[00] METU BANGSAT'
 	oi = nel(io, style='purple')
 	cetak(nel(oi, title='PILIHAN MENU'))
 	jh = input(x+'['+p+'•'+x+'] Pilih : ')
