@@ -150,7 +150,7 @@ def menu(my_name,my_id):
 	except:birth = '-'
 	banner()
 	sg = '# INFO MANGAN LESU'
-	fx = mark(sg, style='yellow')
+	fx = mark(sg, style='purple')
 	sol().print(fx)
 	print(x+'['+h+'•'+x+'] \033[1;34mNama User     : '+str(my_name))
 	print(x+'['+h+'•'+x+'] \033[1;35mID Tumbal     : '+str(my_id))
@@ -378,7 +378,7 @@ def dump_publik():
 	except requests.exceptions.ConnectionError:
 		li = '# KONEKSI BERMASALAH, GK DUE PAKETAN KOK NGECRACK'
 		lo = mark(li, style='red')
-		sol().print(lo, style='cyan')
+		sol().print(lo, style='purple')
 		exit()
 	except (KeyError,IOError):
 		teks = '# GK PUPBLIK LO MAZEHH, NYESEK LEK DIBAYANGNO'
@@ -472,8 +472,8 @@ def setting():
 		exit()
 	met = '# PILIH METHOD CRACK'
 	sol().print(mark(met, style='lawn green'))
-	ioz = '[01] Method B-Api (Cepat)\n[02] Method Mobile (Hasil OK)\n[03] Methode Free Facebook (Lambat)'
-	gess = nel(ioz, style='green')
+	ioz = '[01] Methode B-Api (Cepat)\n[02] Methode Mobile (Hasil lIVE/OK)\n[03] Methode Free FB/koyo huri (LEMOT)'
+	gess = nel(ioz, style='purple')
 	cetak(nel(gess, title='METHOD'))
 	hc = input(x+'['+p+'f'+x+'] Pilih : ')
 	if hc in ['1','01']:
