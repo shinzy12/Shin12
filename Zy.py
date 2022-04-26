@@ -130,7 +130,7 @@ def login_lagi():
 	except KeyError:
 		sue = '# TOKEN RUSAK, SEDIH LEK DIBAYANGNO'
 		suu = mark(sue, style='red')
-		sol().print(suu, style='cyan')
+		sol().print(suu, style='purple')
 		time.sleep(2.5)
 		login_lagi()
 	except requests.exceptions.ConnectionError:
