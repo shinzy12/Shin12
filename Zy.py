@@ -453,7 +453,7 @@ def setting():
 	wl = '# SETTING URUTAN ID'
 	sol().print(mark(wl, style='green'))
 	teks = '[01] Crack Dari Akun old \n[02] Crack Dari Akun new \n[03] Acak Urutan ID'
-	tak = nel(teks, style='cyan')
+	tak = nel(teks, style='purple')
 	cetak(nel(tak, title='SETTING'))
 	hu = input(x+'['+p+'f'+x+'] Pilih : ')
 	if hu in ['1','01']:
