@@ -76,7 +76,7 @@ def banner():
 	wel = '# WELCOME TO SHINZY TOOLS'
 	wel2 = mark(wel, style='green yellow')
 	sol().print(wel2)
-	print(f""" {\33[5m}
+	print(f""" {b}
     _____ __  _______   _________  __ 
    / ___// / / /  _/ | / /__  /\ \/ / 
    \__ \/ /_/ // //  |/ /  / /  \  / [®]PEMBUAT = M.ZAINUL UMAM
