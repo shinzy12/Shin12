@@ -483,12 +483,12 @@ def setting():
 		method.append('mobile')
 	guw = '# PILIHAN OPSI CRACK '
 	sol().print(mark(guw, style='purple'))
-	aplik = input(x+'['+p+'f'+x+'] \033[1;35mTampilkan Appl terkait? Dalam perbaikan/seng kober  [ Not Recommended ] (y/t) : ')
+	aplik = input(x+'['+p+'f'+x+'] \33[31;1mTampilkan Appl terkait? Dalam perbaikan/seng kober  [ Not Recommended ] (y/t) : ')
 	if aplik in ['y','Y']:
 		taplikasi.append('ya')
 	else:
 		taplikasi.append('no')
-	osk = input(x+'['+p+'f'+x+'] \033[1;35mTampilkan Opsi Checkpoint? Dalam perbaikan/seng kober [ Not Recommended ] (y/t) : ')
+	osk = input(x+'['+p+'f'+x+'] \33[31;1mTampilkan Opsi Checkpoint? Dalam perbaikan/seng kober [ Not Recommended ] (y/t) : ')
 	if osk in ['y','Y']:
 		oprek.append('ya')
 	else:
