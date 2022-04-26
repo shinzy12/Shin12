@@ -471,7 +471,7 @@ def setting():
 		exit()
 	met = '# PILIH METHOD CRACK'
 	sol().print(mark(met, style='purple'))
-	ioz = '[01] Methode B-Api (Cepat)\n[02] Methode Mobile (Hasil lIVE/OK)\n[03] Methode mbasic (SUE)'
+	ioz = '[01] Methode B-Api (CEPAT)\n[02] Methode Mobile (Hasil lIVE/OK)\n[03] Methode mbasic (SANGAT LAMBAT)'
 	gess = nel(ioz, style='purple')
 	cetak(nel(gess, title='METHOD'))
 	hc = input(x+'['+p+'f'+x+'] Pilih : ')
@@ -483,12 +483,12 @@ def setting():
 		method.append('mobile')
 	guw = '# PILIHAN OPSI CRACK '
 	sol().print(mark(guw, style='purple'))
-	aplik = input(x+'['+p+'f'+x+'] \33[31;1mTampilkan Appl terkait? Dalam perbaikan \033[1;93m[ Not Recommended ] (y/t) : ')
+	aplik = input(x+'['+p+'f'+x+'] \33[31;1mTampilkan Appl terkait? Dalam perbaikan \033[1;93m[ Not Recommend ] (y/t) : ')
 	if aplik in ['y','Y']:
 		taplikasi.append('ya')
 	else:
 		taplikasi.append('no')
-	osk = input(x+'['+p+'f'+x+'] \33[31;1mTampilkan Opsi Checkpoint? Dalam perbaikan \033[1;93m[ Not Recommended ] (y/t) : ')
+	osk = input(x+'['+p+'f'+x+'] \33[31;1mTampilkan Opsi Checkpoint? Dalam perbaikan \033[1;93m[ Not Recommend ] (y/t) : ')
 	if osk in ['y','Y']:
 		oprek.append('ya')
 	else:
