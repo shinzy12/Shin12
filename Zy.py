@@ -156,7 +156,7 @@ def menu(my_name,my_id):
 	print(x+'['+h+'•'+x+'] \033[1;93mTanggal Lahir : '+str(birth))
 	print(x+'['+h+'•'+x+'] Alamat Ip     : '+str(sh['origin']))
 	io = '\x1b [01] Crack ID Pertemanan/Publik\n\x1b [02] Crack ID Publik (Masal) \n\x1b [03] Cek Hasil Crack\n\x1b [04] Cek Opsi Checkpoint\n[00] METU BANGSAT'
-	oi = nel(io, style='purple')
+	oi = nel(io, style='green')
 	cetak(nel(oi, title='PILIHAN MENU'))
 	jh = input(x+'['+p+'•'+x+'] Pilih : ')
 	if jh in ['1','01']:
@@ -498,7 +498,7 @@ def setting():
 def passwrd():
 	ler = '# CRACK PROCESS BEGINS, PRESS CTRL+Z TO STOP'
 	sol().print(mark(ler, style='purple'))
-	krek = 'Hasil OK  Disimpan Ke : OK/%s\nHasil CP Disimpan Ke : CP/%s\nMode Pesawat Setiap 5 Menit, jika Masih tidak ada hasil, silahkan banting hp mu lalu beli hp baru, ojo di pek batine ae Gak gelem ganti HP'%(okc,cpc)
+	krek = '\33[31;1mHasil OK  Disimpan Ke : OK/%s\nHasil CP Disimpan Ke : CP/%s\nMode Pesawat Setiap 5 Menit, jika Masih tidak ada hasil, silahkan banting hp mu lalu beli hp baru, ojo di pek batine ae Gak gelem ganti HP'%(okc,cpc)
 	cetak(nel(krek, title='CRACK'))
 	with tred(max_workers=30) as pool:
 		for yuzong in id2:
