@@ -3,11 +3,6 @@
 
 import requests,bs4,json,os,sys,random,datetime,time,re
 try:
-        import pull
-except ImportError:
-	os.system('git pull')
-        time.sleep(1)
-try:
 	import rich
 except ImportError:
 	os.system('pip install rich')
