@@ -78,9 +78,10 @@ def banner():
 	wel2 = mark(wel, style='purple')
 	sol().print(wel2)
 	print(f""" {B}
+    ®serah cyber comunity™
     _____ __  _______   _________  __ 
    / ___// / / /  _/ | / /__  /\ \/ / 
-   \__ \/ /_/ // //  |/ /  / /  \  / [®]PEMBUAT = M.ZAINUL UMAM
+   \__ \/ /_/ // //  |/ /  / /  \  / [®]PEMBUAT = ZAINUL
   ___/ / __  // // /|  /  / /__ / /  [®]UPDATE  = V2.0
  /____/_/ /_/___/_/ |_/  /____//_/   [®]LISENSI = GRATIS
       suport by:HikmaChan ____  _    __              __
