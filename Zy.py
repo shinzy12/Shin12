@@ -88,7 +88,11 @@ def banner():
          ____ ___  __  __/ / /_(_)  / /_____  ____  / /____
         / __ `__ \/ / / / / __/ /  / __/ __ \/ __ \/ / ___/
        / / / / / / /_/ / / /_/ /  / /_/ /_/ / /_/ / (__  )
-      /_/ /_/ /_/\__,_/_/\__/_/   \__/\____/\____/_/____/ """)
+      /_/ /_/ /_/\__,_/_/\__/_/   \__/\____/\____/_/____/ 
+\33[1;32m█▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀█
+\33[1;32m█  \33[mAuthor: Zainul Umam      \33[mGit: Shin12
+\33[1;32m█  \33[mTools : \33[1;33mFREE             \33[mWa : 085740559154
+\33[1;32m█▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄█""")
                                     
 	
 
@@ -367,14 +371,14 @@ def dump_publik():
 	win = '# DUMP ID PUBLIK'
 	win2 = mark(win, style='purple')
 	sol().print(win2)
-	print(x+'['+h+'•'+x+'] Ketik "me" Jika Ingin Dump ID Dari Teman')
-	pil = input(x+'['+p+'f'+x+'] Masukkan ID Facebook : ')
+	print(x+'['+h+'•'+x+'] \33[31;1mKetik "me" Jika Ingin Dump ID Dari Teman')
+	pil = input(x+'['+p+'f'+x+'] \33[31;1mMasukkan ID Facebook : ')
 	try:
 		koh2 = requests.get('https://graph.facebook.com/v2.0/'+pil+'?fields=friends.limit(5000)&access_token='+tokenku[0]).json()
 		for pi in koh2['friends']['data']:
 			try:id.append(pi['id']+'|'+pi['name'])
 			except:continue
-		print(x+'['+h+'•'+x+'] Total : '+str(len(id)))
+		print(x+'['+h+'•'+x+'] \33[31;1mTotal : '+str(len(id)))
 		setting()
 	except requests.exceptions.ConnectionError:
 		li = '# KONEKSI BERMASALAH, GK DUE PAKETAN KOK NGECRACK'
