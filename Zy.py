@@ -77,8 +77,7 @@ def banner():
 	wel = '# WELCOME TO SHINZY TOOLS'
 	wel2 = mark(wel, style='purple')
 	sol().print(wel2)
-	print(f""" {B}
-    _____ __  _______   _________  __ 
+	print(f""" {B}    _____ __  _______   _________  __ 
    / ___// / / /  _/ | / /__  /\ \/ / 
    \__ \/ /_/ // //  |/ /  / /  \  /
   ___/ / __  // // /|  /  / /__ / /
