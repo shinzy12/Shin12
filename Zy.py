@@ -97,7 +97,7 @@ def login():
 			try:
 				sy = requests.get('https://graph.facebook.com/me?access_token='+tokenku[0])
 				sy3 = json.loads(sy.text)['id']
-				menu(sy2,sy3)
+				menu(sy3)
 			except KeyError:
 				login_lagi()
 			except requests.exceptions.ConnectionError:
