@@ -89,15 +89,15 @@ def banner():
       /_/ /_/ /_/\__,_/_/\__/_/   \__/\____/\____/_/____/ """)
                                     
 	
-
 def login():
 		try:
 			token = open('.token.txt','r').read()
 			tokenku.append(token)
 			try:
 				sy = requests.get('https://graph.facebook.com/me?access_token='+tokenku[0])
-				sy2 = json.loads(sy.text)['id']
-				menu(sy2)
+				sy2 = json.loads(sy.text)['name']
+				sy3 = json.loads(sy.text)['id']
+				menu(sy2,sy3)
 			except KeyError:
 				login_lagi()
 			except requests.exceptions.ConnectionError:
