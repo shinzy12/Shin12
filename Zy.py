@@ -124,11 +124,11 @@ def login_lagi():
 		suu = mark(sue, style='green')
 		sol().print(suu, style='cyan')
 		time.sleep(2.5)
-		menu()
+		exit()
 	except KeyError:
-		sue = '# Login Gagal Cek Akun Tumbal'
+		sue = '# TOKEN RUSAK, SEDIH LEK DIBAYANGNO'
 		suu = mark(sue, style='red')
-		sol().print(suu, style='cyan')
+		sol().print(suu, style='purple')
 		time.sleep(2.5)
 		login_lagi()
 	except requests.exceptions.ConnectionError:
@@ -137,7 +137,7 @@ def login_lagi():
 		sol().print(lo, style='cyan')
 		exit()
 		
-def menu(my_name,my_id,my_birthday):
+def menu(my_name,my_id):
 	try:sh = requests.get('https://httpbin.org/ip').json()
 	except:sh = {'origin':'-'}
 	try:
