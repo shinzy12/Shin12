@@ -546,7 +546,7 @@ def crack(idf,pwv):
 	print('\r%s >_< %s/%s <-> OK:%s <-> CP:%s <-> %s%s%s'%(bi,loop,len(id2),ok,cp,int(pers),str(fff),x), end=' ');sys.stdout.flush()
 	ua = random.choice(ugen)
 	ua2 = random.choice(ugen2)
-        ua3 = random.choice(ugen2)
+        ua3 = random.choice(ugen3)
 	ses = requests.Session()
 	for pw in pwv:
 		try:
