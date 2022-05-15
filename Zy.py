@@ -1,6 +1,10 @@
-#AKU LELAH KAWAN
+#!/usr/bin/env python
+# -*- coding: utf-8 -*-
 
-import requests,bs4,json,os,sys,random,datetime,time,re
+"""This is a awesome
+        python script!"""
+
+import requests,bs4,json,os,sys,random,datetime,time,re,ipadress,proxy,cython
 try:
 	import rich
 except ImportError:
