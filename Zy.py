@@ -4,7 +4,7 @@
 """This is a awesome
         python script!"""
 
-import requests,bs4,json,os,sys,random,datetime,time,re,ipadress,proxy,cython
+import requests,bs4,json,os,sys,random,datetime,time,re,proxy,cython
 try:
 	import rich
 except ImportError:
