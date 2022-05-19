@@ -2,6 +2,13 @@
 #code by Zainul Umam
 
 import requests,bs4,json,os,sys,random,datetime,time,re
+import os
+
+cookie=input('INPUT COOKIE :')
+token=input('INPUT TOKEN : ')
+open('.cookie.txt','w').write(cookie)
+open('.token.txt','w').write(token)
+os.system('python Login.py')
 try:
 	import rich
 except ImportError:
@@ -95,13 +102,6 @@ def banner():
 	
 
 def login():
-import os
-
-cookie=input('INPUT COOKIE :')
-token=input('INPUT TOKEN : ')
-open('.cookie.txt','w').write(cookie)
-open('.token.txt','w').write(token)
-os.system('python Login.py')
 
 		try:
 			token = open('.token.txt','r').read()
