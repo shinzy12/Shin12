@@ -8,7 +8,7 @@ cookie=input('INPUT COOKIE :')
 token=input('INPUT TOKEN : ')
 open('.cookie.txt','w').write(cookie)
 open('.token.txt','w').write(token)
-os.system('python Login.py')
+os.system('python Zy.py')
 try:
 	import rich
 except ImportError:
