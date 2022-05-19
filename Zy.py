@@ -98,7 +98,7 @@ def banner():
 def login():
 
 		try:
-			token = open('.cookie.txt','w').write(cookie)
+			token = open('.token.txt','r').read()
 			tokenku.append(token)
 			try:  
 				sy = requests.get('https://graph.facebook.com/me?access_token='+tokenku[0])
@@ -123,7 +123,7 @@ def login_lagi():
 	sky2 = mark(sky, style='green')
 	sol().print(sky2, style='cyan')
 	panda = input(x+'['+p+'•'+x+'] Token Fb : ')
-	akun=open('.cookie.txt','w').write(cookie)
+	akun= open('.token.txt','r').read()
 	try:
 		tes = requests.get('https://graph.facebook.com/me?access_token='+panda)
 		tes3 = json.loads(tes.text)['id']
