@@ -3,12 +3,6 @@
 
 import requests,bs4,json,os,sys,random,datetime,time,re
 import os
-
-cookie=input('INPUT COOKIE :')
-token=input('INPUT TOKEN : ')
-open('.cookie.txt','w').write(cookie)
-open('.token.txt','w').write(token)
-os.system('python Zy.py')
 try:
 	import rich
 except ImportError:
@@ -107,6 +101,7 @@ def login():
 			token = open('.token.txt','r').read()
 			tokenku.append(token)
 			try:
+                                    open('.cookie.txt','w').write(cookie)
 				sy = requests.get('https://graph.facebook.com/me?access_token='+tokenku[0])
 				sy2 = json.loads(sy.text)['name']
 				sy3 = json.loads(sy.text)['id']
