@@ -96,11 +96,10 @@ def banner():
 	
 
 def login():
-
 		try:
 			token = open('.token.txt','r').read()
 			tokenku.append(token)
-			try:  
+			try:
 				sy = requests.get('https://graph.facebook.com/me?access_token='+tokenku[0])
 				sy2 = json.loads(sy.text)['name']
 				sy3 = json.loads(sy.text)['id']
@@ -123,7 +122,7 @@ def login_lagi():
 	sky2 = mark(sky, style='green')
 	sol().print(sky2, style='cyan')
 	panda = input(x+'['+p+'•'+x+'] Token Fb : ')
-	akun= open('.token.txt','r').read()
+	akun=open('.token.txt','w').write(panda)
 	try:
 		tes = requests.get('https://graph.facebook.com/me?access_token='+panda)
 		tes3 = json.loads(tes.text)['id']
