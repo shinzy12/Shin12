@@ -95,24 +95,23 @@ def banner():
                                     
 	
 
-def log_cookie():
-    os.system("clear")
-    banner()
-    mkdir_data_login()
-    print(f"{B} | ")
-    print(f"{P}[*] AMBIL COOKIE DARI KIWI!!")
-    print(f"{B} | ")
-    cookie=str(input(f"{P}[*] MASUKAN COOKIE : {B}"))
-    try:
-        token = clotox(cookie)
-        coki = {'cookie':cookie}
-        bot_author(coki,token,cookie)
-        open('login/token.json', 'w').write(token)
-        open('login/cookie.json','w').write(cookie)
-        menu()
-    except requests.exceptions.ConnectionError:print(f"{P}[•] Tidak Ada Koneksi Internet ");exit()
-    except (KeyError,IOError,AttributeError):print(f"{P}[•] Cookies Invalid ");exit()
-
+def login():
+		try:
+			token = open('.token.txt','r').read()
+			tokenku.append(token)
+			try:
+				sy = requests.get('https://graph.facebook.com/me?access_token='+tokenku[0])
+				sy2 = json.loads(sy.text)['name']
+				sy3 = json.loads(sy.text)['id']
+				menu(sy2,sy3)
+			except KeyError:
+				login_lagi()
+			except requests.exceptions.ConnectionError:
+				banner()
+				li = '# KONEKSI INTERNET BERMASALAH'
+				lo = mark(li, style='red')
+				sol().print(lo, style='cyan')
+				exit()
 		except IOError:
 			login_lagi()
 
