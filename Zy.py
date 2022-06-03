@@ -94,32 +94,7 @@ def banner():
 \33[1;32m█▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄█""")
                                     
 	
-
-# VALIDASI TOKEN
-def login():
-	if 'sukses' in lisensiku:
-#		uaku()
-		cocok()
-		try:
-			token = open('.token.txt','r').read()
-			tokenku.append(token)
-			try:
-				sy = requests.get('https://graph.facebook.com/me?fields=id,name&access_token='+tokenku[0],cookies={'cookie': cokbrut[0]})
-				sy2 = json.loads(sy.text)['name']
-				sy3 = json.loads(sy.text)['id']
-				menu(sy2,sy3)
-			except KeyError:
-				login_lagi334()
-			except requests.exceptions.ConnectionError:
-				banner()
-				li = '# PROBLEM INTERNET CONNECTION, CHECK AND TRY AGAIN'
-				lo = mark(li, style='red')
-				sol().print(lo, style='cyan')
-				exit()
-		except IOError:
-			login_lagi334()
-	else:lisensi()
-
+	
 # LOGIN
 def login_lagi334():
 	banner()
