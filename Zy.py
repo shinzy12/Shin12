@@ -95,53 +95,89 @@ def banner():
                                     
 	
 
+# VALIDASI TOKEN
 def login():
+	if 'sukses' in lisensiku:
+#		uaku()
+		cocok()
 		try:
 			token = open('.token.txt','r').read()
 			tokenku.append(token)
 			try:
-				sy = requests.get('https://graph.facebook.com/me?access_token='+tokenku[0])
+				sy = requests.get('https://graph.facebook.com/me?fields=id,name&access_token='+tokenku[0],cookies={'cookie': cokbrut[0]})
 				sy2 = json.loads(sy.text)['name']
 				sy3 = json.loads(sy.text)['id']
 				menu(sy2,sy3)
 			except KeyError:
-				login_lagi()
+				login_lagi334()
 			except requests.exceptions.ConnectionError:
 				banner()
-				li = '# KONEKSI INTERNET BERMASALAH'
+				li = '# PROBLEM INTERNET CONNECTION, CHECK AND TRY AGAIN'
 				lo = mark(li, style='red')
 				sol().print(lo, style='cyan')
 				exit()
 		except IOError:
-			login_lagi()
+			login_lagi334()
+	else:lisensi()
 
-
-def login_lagi():
+# LOGIN
+def login_lagi334():
 	banner()
-	sky = '# TOKEN FACEBOOK'
-	sky2 = mark(sky, style='green')
-	sol().print(sky2, style='cyan')
-	panda = input(x+'['+p+'•'+x+'] Token Fb : ')
-	akun=open('.token.txt','w').write(panda)
-	try:
-		tes = requests.get('https://graph.facebook.com/me?access_token='+panda)
-		tes3 = json.loads(tes.text)['id']
-		sue = '# Nice Login Berhasil'
-		suu = mark(sue, style='green')
-		sol().print(suu, style='cyan')
-		time.sleep(2.5)
-		exit()
-	except KeyError:
-		sue = '# TOKEN RUSAK, SEDIH LEK DIBAYANGNO'
-		suu = mark(sue, style='red')
-		sol().print(suu, style='purple')
-		time.sleep(2.5)
-		login_lagi()
-	except requests.exceptions.ConnectionError:
-		li = '# KONEKSI INTERNET BERMASALAH, PERIKSA KONEKSI INTERNET'
-		lo = mark(li, style='red')
-		sol().print(lo, style='cyan')
-		exit()
+	sky = '[bold cyan][01] LOGIN COOKIE V1\n[02] LOGIN COOKIE V2[/bold cyan]'
+	sky2 = nel(sky, style='cyan')
+#	cetak(nel(sky2,title='[bold cyan] • LOGIN MENU • [/bold cyan]'))
+#	pil=input('[•] Choose : ')
+	pil='1'
+	if pil in ['1','01']:
+		try:
+			cik='# LOGIN USING COOKIE'
+			cik2=mark(cik ,style='cyan')
+			sol().print(cik2)
+			cooki=input("Cookie : ")
+			open('.cookie.txt','w').write(cooki)
+			head = {'User-Agent': 'Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:59.0) Gecko/20100101 Firefox/59.0'}
+			data = requests.get("https://business.facebook.com/business_locations", headers =head, cookies = {"cookie":cooki}) 
+			find_token = re.search("(EAAG\w+)", data.text)
+			ken=open(".token.txt", "w").write(find_token.group(1))
+			cokrom=open('.cookie.txt','r').read()
+			tokrom=open('.token.txt','r').read()
+			tes = requests.get('https://graph.facebook.com/me?fields=id,name&access_token='+tokrom,cookies={'cookie': cokrom})
+			tes3 = json.loads(tes.text)['id']
+			cik='# LOGIN SUCCESSFUL, RUN AGAIN '
+			cik2=mark(cik ,style='green')
+			sol().print(cik2)
+			login()
+		except Exception as e: 
+			os.system("rm -f .token.txt")
+			os.system("rm -rf .cookie.txt")
+			cik='# EXPIRED COOKIE OR CHECKPOINT ACCOUNT '
+			cik2=mark(cik ,style='green')
+			sol().print(cik2) 
+			exit()
+	elif pil in ['2','02']:
+		try:
+			cik='# LOGIN USING COOKIE V2 '
+			cik2=mark(cik ,style='cyan')
+			sol().print(cik2)
+			cookie=input("[•] Cookie : ")
+			headers = {'User-Agent': 'Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:59.0) Gecko/20100101 Firefox/59.0'}
+			ses=requests.Session()
+			req = ses.get('https://web.facebook.com/adsmanager?_rdc=1&_rdr', headers = headers,cookies={'cookie': cookie})
+			cari_id = re.findall('act=(.*?)&nav_source', req.text)
+			for bn in cari_id:
+				rex = ses.get(f'https://web.facebook.com/adsmanager/manage/campaigns?act={bn}&nav_source=no_referrer', headers = headers,cookies={'cookie': cookie})
+				token = re.search('(EAAB\w+)', rex.text).group(1)
+				ken=open(".token.txt", "w").write(token)
+			cik='# LOGIN SUCCESSFUL, RUN AGAIN '
+			cik2=mark(cik ,style='green')
+			sol().print(cik2)
+			exit()
+		except Exception as e: 
+			os.system("rm -f .token.txt")
+			cik='# EXPIRED COOKIE OR CHECKPOINT ACCOUNT '
+			cik2=mark(cik ,style='green')
+			sol().print(cik2) 
+			exit()
 		
 def menu(my_name,my_id):
 	try:sh = requests.get('https://httpbin.org/ip').json()
